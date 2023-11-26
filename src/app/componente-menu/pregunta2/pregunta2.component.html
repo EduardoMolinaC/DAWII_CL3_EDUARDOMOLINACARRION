@@ -1,0 +1,12 @@
+<div>
+    <h2>Pregunta 2</h2>
+  
+    <label for="horasTrabajadas">Horas Trabajadas:</label>
+    <input type="number" [(ngModel)]="horasTrabajadas" id="horasTrabajadas" />
+  
+    <button (click)="calcularSalario()">Calcular Salario</button>
+  
+    <div *ngIf="salario !== undefined">
+      <p>El salario es: {{ salario | currency }}</p>
+    </div>
+  </div>
